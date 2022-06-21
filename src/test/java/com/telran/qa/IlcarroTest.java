@@ -24,19 +24,19 @@ public class IlcarroTest {
 
     @Test
     public void findElementsByClassTest() {
-        String element = driver.getTitle(); // можно найти только таким спопсобом, так как <title> есть метатегом и находится в сегда в <head>
+        String element = driver.getTitle(); // можно найти только таким спопсобом, так как <title> есть метатегом и находится всегда в <head>
         System.out.println(element);
 
 //        driver.findElement(By.className("title"));
 
         List<WebElement> title1 = driver.findElements(By.className("title"));
-        System.out.println(title1.size());
+        System.out.println(title1.size());                                     // Print all amount with class = "title" in site
 
 //        driver.findElements(By.className("title"))
         List<WebElement> title = driver.findElements(By.className("title"));
         for (int i = 0; i < title.size(); i++) {
             String newTitle = title.get(i).getText();
-            System.out.println(newTitle);
+            System.out.println(newTitle);                                         // Print all class = "title" in site
         }
 
 
