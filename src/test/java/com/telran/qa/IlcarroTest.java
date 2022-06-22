@@ -42,8 +42,8 @@ public class IlcarroTest {
 
         List<WebElement> img = driver.findElements(By.tagName("img"));
         System.out.println(img.size());
-        List<WebElement> imgList = driver.findElements(By.className("img"));
-        System.out.println(imgList);
+
+
 
 
     }
