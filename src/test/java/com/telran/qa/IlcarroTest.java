@@ -37,8 +37,13 @@ public class IlcarroTest {
         for (int i = 0; i < title.size(); i++) {
             String newTitle = title.get(i).getText();
             System.out.println(newTitle);                                         // Print all class = "title" in site
+
         }
 
+        List<WebElement> img = driver.findElements(By.tagName("img"));
+        System.out.println(img.size());
+        List<WebElement> imgList = driver.findElements(By.className("img"));
+        System.out.println(imgList);
 
 
     }

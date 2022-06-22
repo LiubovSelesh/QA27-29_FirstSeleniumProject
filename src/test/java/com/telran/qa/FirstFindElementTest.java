@@ -24,15 +24,15 @@ public class FirstFindElementTest {
     }
     @Test
     public void findElementsByTagTest() {
-        // find element by tag
-        // driver.findElement(By.tagName("a"));
-//        WebElement element = driver.findElement(By.tagName("a"));
-//        System.out.println(element.getText());
-//        List<WebElement> elements = driver.findElements(By.tagName("a"));
-//        System.out.println(elements.size());
-//        WebElement element1 = driver.findElement(By.tagName("h1"));
-//        System.out.println(element1.getText());
-//        driver.findElement(By.className("container"));
+//        // find element by tag
+//        // driver.findElement(By.tagName("a"));
+        WebElement element = driver.findElement(By.tagName("a"));
+        System.out.println(element.getText());
+        List<WebElement> elements = driver.findElements(By.tagName("a"));
+        System.out.println(elements.size());
+        WebElement element1 = driver.findElement(By.tagName("h1"));
+        System.out.println(element1.getText());
+        driver.findElement(By.className("container"));
         WebElement container = driver.findElement(By.className("container"));
         System.out.println(container.getText());
     }
