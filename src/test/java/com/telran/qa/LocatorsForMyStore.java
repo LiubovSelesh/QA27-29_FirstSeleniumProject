@@ -15,7 +15,7 @@ public class LocatorsForMyStore {
     @BeforeMethod
     public void setUp() {
         wd = new ChromeDriver();
-        wd.get("http://automationpractice.com/index.php ");
+        wd.get("http://automationpractice.com/index.php");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
